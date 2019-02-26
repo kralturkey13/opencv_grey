@@ -1,0 +1,11 @@
+import cv2
+import numpy as np
+
+resim = cv2.imread("214dsf.png",0)            #file name, 0 means turn picture to grey
+resim2 = cv2.imread("214dsf_gri.png")
+cv2.imwrite("new_grey_picture.png",resim)     #imwrite creates a new picture
+cv2.imshow("Savas resmi",resim)
+cv2.imshow("Savas resmi gri",resim2)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
